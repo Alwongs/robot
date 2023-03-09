@@ -12,12 +12,12 @@ html, body {
 }
 .head {
     background-color: #cecece;
-    border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
     width: 400px;
     height: 420px;
     margin: 0 auto;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4);
 }
 .forehead {
     height: 80px;
@@ -51,6 +51,7 @@ html, body {
     border-bottom: 1px solid black;
     position: absolute;
     top: 0;
+    overflow: hidden;
 }
 .eyes-and-nose__eye-left {
     border-left: 1px solid black;
@@ -71,7 +72,7 @@ html, body {
     position: absolute;
     top: 5px;
     margin: 0;
-    transition: 1.5s;
+
 
 }
 .pupil-left {
