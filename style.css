@@ -6,11 +6,12 @@ html, body {
     margin: 0;
 }
 .app {
-    background-color: #f1e7e0;
+    background-color: #cadace;
     padding-top: 100px;
     height: 100vh;
 }
 .head {
+    background-color: #cecece;
     border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
@@ -18,7 +19,6 @@ html, body {
     height: 420px;
     margin: 0 auto;
 }
-
 .forehead {
     height: 80px;
     display: flex;
@@ -27,25 +27,22 @@ html, body {
     width: 40%;
     height: 100%;
     border-bottom: 1px solid #000;
+    box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 .forehead__center {
     width: 20%;
-    height: 100%;   
+    height: 100%; 
 }
-
-
 
 .eyes-and-nose {
     height: 80px;  
-    display: flex; 
+    display: flex; margin-bottom: 8px;
 }
 .eyes-and-nose__side {
     position: relative;
     height: 100%;
-    width: 40%;
+    width: 40%;  
 }
-
-
 .eyes-and-nose__eye {
     width: 65%;
     height: 40%;
@@ -65,43 +62,49 @@ html, body {
 }
 
 
+
 .pupil {
     width: 20px;
     height: 20px;
     background-color: rgb(0, 220, 0);
     border: 1px solid black;
     position: absolute;
+    top: 5px;
+    margin: 0;
+    transition: 1.5s;
+
 }
 .pupil-left {
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 42px;
 }
 .pupil-right {
-    right: 50%;    
-    transform: translate(50%, 0);
+    left: 42px;
 }
 
 
-.eyes-and-nose__left {
-    border-right: 3px solid black;
-}
-.eyes-and-nose__right {
-    border-left: 3px solid black;
-}
+
 
 .eyes-and-nose__center {
     height: 100%;
     width: 20%;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.4);     
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
 }
-
-
+.eyes-and-nose__center:hover {
+    background-color: #ba9797;
+}
 .mouth {
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);    
     width: 300px;
     height: 200px;
     margin: 0 auto;
     background-color: #494646;
     border-radius: 5px;
-    border: 3px solid black;
+    border: 2px solid black;
     color:rgb(0, 220, 0);
     font-size: 14px;
     padding: 16px;
