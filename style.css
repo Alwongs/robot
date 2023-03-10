@@ -7,7 +7,7 @@ html, body {
 }
 .app {
     background-color: #cadace;
-    padding-top: 100px;
+    padding-top: 32px;
     height: 100vh;
 }
 .head {
@@ -18,6 +18,7 @@ html, body {
     height: 420px;
     margin: 0 auto;
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 32px;
 }
 .forehead {
     height: 80px;
@@ -62,18 +63,17 @@ html, body {
     left: 0;
 }
 
-
-
 .pupil {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-color: rgb(0, 220, 0);
-    border: 1px solid black;
+    border: 2px solid black;
     position: absolute;
-    top: 5px;
+    top: 1px;
     margin: 0;
-
-
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
 }
 .pupil-left {
     left: 42px;
@@ -81,9 +81,6 @@ html, body {
 .pupil-right {
     left: 42px;
 }
-
-
-
 
 .eyes-and-nose__center {
     height: 100%;
@@ -98,6 +95,7 @@ html, body {
 .eyes-and-nose__center:hover {
     background-color: #ba9797;
 }
+
 .mouth {
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);    
     width: 300px;
@@ -107,6 +105,16 @@ html, body {
     border-radius: 5px;
     border: 2px solid black;
     color:rgb(0, 220, 0);
-    font-size: 14px;
+    font-size: 16px;
     padding: 16px;
+}
+
+.textarea {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+}
+.textarea textarea {
+    width: 100%;
+    font-size: 15px;
 }
